@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="site-header">
         <div class="container nav-wrap">
             <a href="index.html" class="brand">Aman Chandaliya</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
             <nav class="site-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -30,43 +33,53 @@
     <main>
         <section class="page-header">
             <div class="container">
-                <p class="eyebrow">Writing</p>
-                <h1>Articles & Commentary</h1>
-                <p class="lede">Short-form analysis on public finance, statutory reform, and infrastructure policy.</p>
+                <p class="eyebrow reveal">Writing</p>
+                <h1 class="reveal">Articles & Commentary</h1>
+                <p class="lede reveal">Short-form analysis on investing, markets, valuation, and personal finance.</p>
             </div>
         </section>
 
-        <section class="content">
+        <section class="content section">
             <div class="container">
                 <div class="research-list">
-                    <article class="research-item">
+                    <article class="research-item reveal">
                         <div class="meta">
                             <span class="tag">Commentary</span>
                             <span class="date">May 2026</span>
                         </div>
-                        <h2>Why Consensus Forecasts Matter More Than the Number</h2>
-                        <p>The structure of a state's revenue forecast often reveals more about its fiscal culture than the headline figure does.</p>
-                        <a href="articles/consensus-forecasts-matter.html" class="read-more">Read more →</a>
+                        <h2>Thinking in Base Rates</h2>
+                        <p>Most investing mistakes aren't analytical — they're failures to anchor on what usually happens.</p>
+                        <a href="articles/thinking-in-base-rates.html" class="read-more">Read more →</a>
                     </article>
 
-                    <article class="research-item">
+                    <article class="research-item reveal">
                         <div class="meta">
                             <span class="tag">Analysis</span>
                             <span class="date">April 2026</span>
                         </div>
-                        <h2>Three Approaches to Resilience Budgeting</h2>
-                        <p>How Florida, Connecticut, and Wyoming each treat long-horizon capital risk in their statutory frameworks.</p>
-                        <a href="articles/resilience-budgeting-approaches.html" class="read-more">Read more →</a>
+                        <h2>Valuation Isn't a Formula — It's a Story</h2>
+                        <p>A DCF is a way of forcing a story to be internally consistent, not a way of conjuring a price.</p>
+                        <a href="articles/valuation-isnt-a-formula.html" class="read-more">Read more →</a>
                     </article>
 
-                    <article class="research-item">
+                    <article class="research-item reveal">
                         <div class="meta">
-                            <span class="tag">Notes</span>
+                            <span class="tag">Markets</span>
                             <span class="date">March 2026</span>
                         </div>
-                        <h2>Reading State Budgets Like a Researcher</h2>
-                        <p>A short guide to navigating statutory financial documentation without losing the thread.</p>
-                        <a href="articles/reading-state-budgets.html" class="read-more">Read more →</a>
+                        <h2>The Dot Plot Trap</h2>
+                        <p>Why the Fed's projections are useful for understanding the committee — and dangerous as a market forecast.</p>
+                        <a href="articles/fed-dot-plot-trap.html" class="read-more">Read more →</a>
+                    </article>
+
+                    <article class="research-item reveal">
+                        <div class="meta">
+                            <span class="tag">Personal Finance</span>
+                            <span class="date">February 2026</span>
+                        </div>
+                        <h2>Compounding, Quietly</h2>
+                        <p>The most important personal-finance work is boring, automatic, and almost invisible.</p>
+                        <a href="articles/compounding-quietly.html" class="read-more">Read more →</a>
                     </article>
                 </div>
             </div>
@@ -82,5 +95,6 @@
             </ul>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

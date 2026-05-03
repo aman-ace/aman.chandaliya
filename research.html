@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="site-header">
         <div class="container nav-wrap">
             <a href="index.html" class="brand">Aman Chandaliya</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
             <nav class="site-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -30,43 +33,43 @@
     <main>
         <section class="page-header">
             <div class="container">
-                <p class="eyebrow">Research</p>
-                <h1>Research Projects</h1>
-                <p class="lede">A growing collection of working papers and policy briefs on state finance and public infrastructure.</p>
+                <p class="eyebrow reveal">Research</p>
+                <h1 class="reveal">Research</h1>
+                <p class="lede reveal">Working papers and policy briefs across markets, corporate finance, and macro.</p>
             </div>
         </section>
 
-        <section class="content">
+        <section class="content section">
             <div class="container">
                 <div class="research-list">
-                    <article class="research-item">
+                    <article class="research-item reveal">
                         <div class="meta">
                             <span class="tag">Working Paper</span>
                             <span class="date">May 2026</span>
                         </div>
-                        <h2>Consensus Revenue Forecasting Across U.S. States</h2>
-                        <p>A comparative analysis of statutory consensus revenue forecasting in Connecticut, Florida, and Wyoming.</p>
-                        <a href="research/paper-revenue-forecasting.html" class="read-more">Read more →</a>
+                        <h2>Estimating the Equity Risk Premium After 2020</h2>
+                        <p>How shifts in real rates and inflation regimes change the way analysts should think about the equity risk premium.</p>
+                        <a href="research/paper-equity-risk-premium.html" class="read-more">Read more →</a>
                     </article>
 
-                    <article class="research-item">
+                    <article class="research-item reveal">
                         <div class="meta">
-                            <span class="tag">Policy Brief</span>
+                            <span class="tag">Working Paper</span>
                             <span class="date">April 2026</span>
                         </div>
-                        <h2>Resilience Funding for Aging Public Infrastructure</h2>
-                        <p>How state capital budgets account for climate risk and long-horizon maintenance obligations.</p>
-                        <a href="research/paper-infrastructure-resilience.html" class="read-more">Read more →</a>
+                        <h2>Capital Structure in a Higher-Rate World</h2>
+                        <p>How leverage decisions are evolving as the cost of debt re-rates and refinancing walls approach.</p>
+                        <a href="research/paper-capital-structure.html" class="read-more">Read more →</a>
                     </article>
 
-                    <article class="research-item">
+                    <article class="research-item reveal">
                         <div class="meta">
-                            <span class="tag">Literature Review</span>
+                            <span class="tag">Policy Brief</span>
                             <span class="date">March 2026</span>
                         </div>
-                        <h2>Budget Transparency and Statutory Reporting</h2>
-                        <p>A peer-reviewed survey of how state-level statutory reporting requirements shape transparency outcomes.</p>
-                        <a href="research/paper-budget-transparency.html" class="read-more">Read more →</a>
+                        <h2>The Fiscal–Monetary Mix and Asset Prices</h2>
+                        <p>A framework for thinking about how fiscal policy increasingly drives the macro and market backdrop.</p>
+                        <a href="research/paper-fiscal-monetary-mix.html" class="read-more">Read more →</a>
                     </article>
                 </div>
             </div>
@@ -82,5 +85,6 @@
             </ul>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

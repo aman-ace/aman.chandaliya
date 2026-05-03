@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="site-header">
         <div class="container nav-wrap">
             <a href="index.html" class="brand">Aman Chandaliya</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
             <nav class="site-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -30,30 +33,30 @@
     <main>
         <section class="page-header">
             <div class="container">
-                <p class="eyebrow">Contact</p>
-                <h1>Let's connect.</h1>
-                <p class="lede">Whether about research collaboration, policy commentary, or job opportunities — I'd love to hear from you.</p>
+                <p class="eyebrow reveal">Contact</p>
+                <h1 class="reveal">Let's connect.</h1>
+                <p class="lede reveal">Whether about research, writing, collaborations, or job opportunities — I'd love to hear from you.</p>
             </div>
         </section>
 
-        <section class="content">
+        <section class="content section">
             <div class="container narrow">
                 <div class="contact-grid">
-                    <div class="contact-card">
+                    <div class="contact-card reveal">
                         <h3>Email</h3>
                         <p><a href="mailto:aman.chandaliya@baruchmail.cuny.edu">aman.chandaliya@baruchmail.cuny.edu</a></p>
                     </div>
-                    <div class="contact-card">
+                    <div class="contact-card reveal">
                         <h3>GitHub</h3>
                         <p><a href="https://github.com/aman-ace" target="_blank" rel="noopener">github.com/aman-ace</a></p>
                     </div>
-                    <div class="contact-card">
-                        <h3>Research Interests</h3>
-                        <p>Public finance, state budgeting, infrastructure resilience, statutory frameworks.</p>
+                    <div class="contact-card reveal">
+                        <h3>Topics</h3>
+                        <p>Markets, corporate finance, fiscal policy, personal finance, financial data.</p>
                     </div>
-                    <div class="contact-card">
+                    <div class="contact-card reveal">
                         <h3>Open To</h3>
-                        <p>Full-time roles, research collaboration, and freelance writing on public finance.</p>
+                        <p>Full-time roles, research collaborations, and freelance financial writing.</p>
                     </div>
                 </div>
             </div>
@@ -69,5 +72,6 @@
             </ul>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

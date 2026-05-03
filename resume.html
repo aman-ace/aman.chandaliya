@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="site-header">
         <div class="container nav-wrap">
             <a href="index.html" class="brand">Aman Chandaliya</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
             <nav class="site-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -30,48 +33,58 @@
     <main>
         <section class="page-header">
             <div class="container">
-                <p class="eyebrow">Resume</p>
-                <h1>Aman Chandaliya</h1>
-                <p class="lede">Public finance · State budgeting · Infrastructure resilience.</p>
-                <div class="cta-row">
+                <p class="eyebrow reveal">Resume</p>
+                <h1 class="reveal">Aman Chandaliya</h1>
+                <p class="lede reveal">Finance · Markets · Research & Writing.</p>
+                <div class="cta-row reveal">
                     <a href="resume/resume.pdf" class="btn btn-primary" download>Download PDF</a>
                     <a href="contact.html" class="btn btn-secondary">Contact Me</a>
                 </div>
             </div>
         </section>
 
-        <section class="content">
+        <section class="content section">
             <div class="container narrow">
-                <h2>Education</h2>
-                <div class="resume-item">
-                    <h3>Baruch College, CUNY</h3>
-                    <p class="resume-meta">B.B.A. in Public Finance / Public Administration · Expected May 2026</p>
-                    <p>Coursework: state and local government finance, public budgeting, statistical analysis, research methods.</p>
+                <div class="reveal">
+                    <h2>Education</h2>
+                    <div class="resume-item">
+                        <h3>Baruch College, CUNY</h3>
+                        <p class="resume-meta">B.B.A. in Finance · Expected May 2026</p>
+                        <p>Coursework: corporate finance, investments, financial modeling, statistics, public finance, accounting.</p>
+                    </div>
                 </div>
 
-                <h2>Research Experience</h2>
-                <div class="resume-item">
-                    <h3>Independent Research</h3>
-                    <p class="resume-meta">2025 – Present</p>
+                <div class="reveal">
+                    <h2>Experience</h2>
+                    <div class="resume-item">
+                        <h3>Independent Finance Research</h3>
+                        <p class="resume-meta">2025 – Present</p>
+                        <ul class="bullet-list">
+                            <li>Working papers on the equity risk premium, capital structure, and the fiscal–monetary mix.</li>
+                            <li>Built reusable DCF and macro-dashboard models for personal use and writing.</li>
+                            <li>Long-form articles on investing, valuation, and personal finance.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="reveal">
+                    <h2>Skills</h2>
                     <ul class="bullet-list">
-                        <li>Comparative analysis of consensus revenue forecasting in Connecticut, Florida, and Wyoming.</li>
-                        <li>Policy briefs on resilience funding for aging public infrastructure.</li>
-                        <li>Peer-style literature review on statutory budget transparency.</li>
+                        <li><strong>Finance:</strong> Equity valuation (DCF, comps), corporate finance, fixed income basics, macro analysis.</li>
+                        <li><strong>Tools:</strong> Excel (advanced), Python &amp; Pandas (intermediate), Power BI, SQL (basic), Git/GitHub.</li>
+                        <li><strong>Research:</strong> SEC filings, FRED, Web of Science, Business Source Complete, Chicago-style citation.</li>
+                        <li><strong>Writing:</strong> Long-form analysis, working papers, financial commentary.</li>
                     </ul>
                 </div>
 
-                <h2>Skills</h2>
-                <ul class="bullet-list">
-                    <li><strong>Domain:</strong> State budget frameworks, statutory documentation, consensus revenue forecasting, infrastructure resilience.</li>
-                    <li><strong>Research:</strong> Web of Science, Business Source Complete, government report portals, Chicago-style citation.</li>
-                    <li><strong>Writing:</strong> Academic literature reviews, policy briefs, professional communications.</li>
-                    <li><strong>Tools:</strong> Excel, Pandas (intermediate), Power BI, Markdown, Git/GitHub.</li>
-                </ul>
+                <div class="reveal">
+                    <h2>Interests</h2>
+                    <p>Equity research, financial journalism, macro &amp; policy finance, personal finance.</p>
+                </div>
 
-                <h2>Interests</h2>
-                <p>State and local government finance, public infrastructure resilience, budget transparency, financial journalism.</p>
-
-                <p class="resume-note"><em>Replace this content with your real resume details by editing <code>resume.html</code>. Drop a PDF version at <code>resume/resume.pdf</code> for the download button to work.</em></p>
+                <div class="reveal">
+                    <p class="resume-note"><em>Drop a real PDF at <code>resume/resume.pdf</code> to make the download button live. Edit the content above by editing <code>resume.html</code>.</em></p>
+                </div>
             </div>
         </section>
     </main>
@@ -85,5 +98,6 @@
             </ul>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

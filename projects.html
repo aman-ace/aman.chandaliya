@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="site-header">
         <div class="container nav-wrap">
             <a href="index.html" class="brand">Aman Chandaliya</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
             <nav class="site-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -30,43 +33,43 @@
     <main>
         <section class="page-header">
             <div class="container">
-                <p class="eyebrow">Projects</p>
-                <h1>Projects</h1>
-                <p class="lede">Hands-on work — dashboards, trackers, and analyses I've built.</p>
+                <p class="eyebrow reveal">Projects</p>
+                <h1 class="reveal">Projects</h1>
+                <p class="lede reveal">Hands-on finance work — models, dashboards, and analyses I've built.</p>
             </div>
         </section>
 
-        <section class="content">
+        <section class="content section">
             <div class="container">
                 <div class="research-list">
-                    <article class="research-item">
+                    <article class="research-item reveal">
                         <div class="meta">
                             <span class="tag">Project</span>
                             <span class="date">2026</span>
                         </div>
-                        <h2>State Budget Tracker</h2>
-                        <p>A multi-state fiscal year tracker comparing enacted vs. projected revenues and capital outlays.</p>
-                        <a href="projects/state-budget-tracker.html" class="read-more">Read more →</a>
+                        <h2>DCF Equity Valuation Model</h2>
+                        <p>A flexible discounted-cash-flow template for single-stock valuation, with built-in sensitivity tables.</p>
+                        <a href="projects/equity-valuation-model.html" class="read-more">Read more →</a>
                     </article>
 
-                    <article class="research-item">
+                    <article class="research-item reveal">
                         <div class="meta">
                             <span class="tag">Project</span>
                             <span class="date">2026</span>
                         </div>
-                        <h2>Consensus Revenue Dashboard</h2>
-                        <p>A dashboard prototype visualizing forecast vs. actual revenue across multiple state consensus processes.</p>
-                        <a href="projects/revenue-dashboard.html" class="read-more">Read more →</a>
+                        <h2>Macro & Markets Dashboard</h2>
+                        <p>A dashboard tracking key macro indicators alongside major asset-class returns.</p>
+                        <a href="projects/macro-dashboard.html" class="read-more">Read more →</a>
                     </article>
 
-                    <article class="research-item">
+                    <article class="research-item reveal">
                         <div class="meta">
                             <span class="tag">Project</span>
                             <span class="date">2026</span>
                         </div>
-                        <h2>Infrastructure Resilience Risk Map</h2>
-                        <p>A conceptual map linking state capital appropriations to long-horizon resilience risk indicators.</p>
-                        <a href="projects/infrastructure-risk-map.html" class="read-more">Read more →</a>
+                        <h2>Personal Finance Tracker</h2>
+                        <p>A clean, opinionated spreadsheet for budgeting, investing, and net-worth tracking.</p>
+                        <a href="projects/personal-finance-tracker.html" class="read-more">Read more →</a>
                     </article>
                 </div>
             </div>
@@ -82,5 +85,6 @@
             </ul>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

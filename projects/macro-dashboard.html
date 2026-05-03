@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consensus Revenue Dashboard — Aman Chandaliya</title>
+    <title>Macro & Markets Dashboard — Aman Chandaliya</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="site-header">
         <div class="container nav-wrap">
             <a href="../index.html" class="brand">Aman Chandaliya</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
             <nav class="site-nav">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
@@ -30,22 +33,22 @@
     <main>
         <section class="paper">
             <div class="container narrow">
-                <article>
+                <article class="reveal">
                     <span class="tag">Project</span>
-                    <h1>Consensus Revenue Dashboard</h1>
+                    <h1>Macro & Markets Dashboard</h1>
                     <p class="meta">By Aman Chandaliya · 2026</p>
 
                     <h2>Overview</h2>
-                    <p>This dashboard prototype centralizes consensus revenue forecast data from publicly available state publications, surfacing forecast accuracy and procedural metadata side-by-side.</p>
+                    <p>Pulls together CPI, unemployment, yield curves, and equity/bond/commodity returns into a single view — designed for fast monthly reads on the macro backdrop.</p>
 
                     <h2>Stack & Sources</h2>
-                    <p>Excel · Power BI · public statutory reports</p>
+                    <p>Python · Pandas · Plotly · FRED API</p>
 
                     <h2>Status</h2>
                     <p>Prototype</p>
 
                     <h2>Outcome</h2>
-                    <p>Designed for legislative staff and journalists who need rapid, sourced answers about forecast reliability.</p>
+                    <p>A weekly habit: 10 minutes to scan the dashboard, write a one-paragraph macro note.</p>
 
                     <a href="../projects.html" class="back-link">← Back to Projects</a>
                 </article>
@@ -62,5 +65,6 @@
             </ul>
         </div>
     </footer>
+    <script src="../script.js"></script>
 </body>
 </html>

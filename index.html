@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="site-header">
         <div class="container nav-wrap">
             <a href="index.html" class="brand">Aman Chandaliya</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
             <nav class="site-nav">
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
@@ -29,58 +32,109 @@
 
     <main>
         <section class="hero">
-            <div class="container">
-                <p class="eyebrow">Public Finance · Policy Research</p>
-                <h1>Researching the systems that fund our public future.</h1>
-                <p class="lede">I study state budget frameworks, consensus revenue forecasting, and the resilience of public infrastructure — translating statutory complexity into clear, actionable analysis.</p>
-                <div class="cta-row">
-                    <a href="research.html" class="btn btn-primary">View Research</a>
+            <div class="hero-bg" aria-hidden="true">
+                <div class="hero-blob hero-blob-1"></div>
+                <div class="hero-blob hero-blob-2"></div>
+                <div class="hero-grid-overlay"></div>
+            </div>
+            <div class="container hero-inner">
+                <p class="eyebrow reveal">Finance · Markets · Strategy</p>
+                <h1 class="reveal">Making sense of finance — from <span class="grad-text">markets</span> to <span class="grad-text">policy</span>.</h1>
+                <p class="lede reveal">I write about investing, corporate finance, and the institutions that shape capital flows. Clear analysis, careful sourcing, and ideas you can actually use.</p>
+                <div class="cta-row reveal">
+                    <a href="research.html" class="btn btn-primary">Explore Research</a>
                     <a href="about.html" class="btn btn-secondary">About Me</a>
+                </div>
+                <div class="hero-stats reveal">
+                    <div><strong>15+</strong><span>Articles & briefs</span></div>
+                    <div><strong>3</strong><span>Active projects</span></div>
+                    <div><strong>5</strong><span>Sectors covered</span></div>
                 </div>
             </div>
         </section>
 
-        <section class="features">
-            <div class="container grid-3">
-                <article class="card">
-                    <h3>State Fiscal Policy</h3>
-                    <p>Analyzing budget transparency, revenue estimation, and statutory frameworks across Connecticut, Florida, and Wyoming.</p>
-                </article>
-                <article class="card">
-                    <h3>Infrastructure Resilience</h3>
-                    <p>Risk assessments and resilience planning for public infrastructure under climate and fiscal stress.</p>
-                </article>
-                <article class="card">
-                    <h3>Academic Writing</h3>
-                    <p>Peer-reviewed literature reviews and policy briefs prepared with Chicago-style citation standards.</p>
-                </article>
+        <section class="features section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Focus areas</p>
+                    <h2>What I cover</h2>
+                </div>
+                <div class="grid-3">
+                    <article class="card reveal">
+                        <div class="card-icon">📈</div>
+                        <h3>Markets & Investing</h3>
+                        <p>Equities, fixed income, and macro themes — explained without the jargon. Long-form analysis paired with practical takeaways.</p>
+                    </article>
+                    <article class="card reveal">
+                        <div class="card-icon">🏛️</div>
+                        <h3>Corporate Finance</h3>
+                        <p>Valuation, capital structure, and M&amp;A — how companies raise, allocate, and return capital, and why those choices matter.</p>
+                    </article>
+                    <article class="card reveal">
+                        <div class="card-icon">🌐</div>
+                        <h3>Public & Policy Finance</h3>
+                        <p>Where markets meet government — fiscal policy, infrastructure, and the rules that shape the financial system.</p>
+                    </article>
+                    <article class="card reveal">
+                        <div class="card-icon">💡</div>
+                        <h3>Personal Finance</h3>
+                        <p>Building wealth deliberately — frameworks for budgeting, investing, and thinking long-term about money.</p>
+                    </article>
+                    <article class="card reveal">
+                        <div class="card-icon">📊</div>
+                        <h3>Data & Modeling</h3>
+                        <p>Hands-on financial models, dashboards, and visualizations that turn raw data into decision-ready insight.</p>
+                    </article>
+                    <article class="card reveal">
+                        <div class="card-icon">📝</div>
+                        <h3>Financial Writing</h3>
+                        <p>Clear, sourced commentary on what's moving markets and why — written for curious readers, not just specialists.</p>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section class="highlight">
+        <section class="highlight section">
             <div class="container">
-                <h2>Explore</h2>
+                <div class="section-head reveal">
+                    <p class="eyebrow">Explore the site</p>
+                    <h2>Where to start</h2>
+                </div>
                 <div class="featured-list">
-                    <a href="projects.html" class="featured-item">
+                    <a href="projects.html" class="featured-item reveal">
                         <span class="tag">Projects</span>
                         <h3>Hands-on work</h3>
-                        <p>Dashboards, trackers, and analyses I've built.</p>
+                        <p>Models, dashboards, and analyses I've built.</p>
+                        <span class="arrow">→</span>
                     </a>
-                    <a href="research.html" class="featured-item">
+                    <a href="research.html" class="featured-item reveal">
                         <span class="tag">Research</span>
                         <h3>Working papers</h3>
-                        <p>Peer-style research on state finance and resilience.</p>
+                        <p>Deeper dives across markets and finance.</p>
+                        <span class="arrow">→</span>
                     </a>
-                    <a href="articles.html" class="featured-item">
+                    <a href="articles.html" class="featured-item reveal">
                         <span class="tag">Articles</span>
-                        <h3>Short-form commentary</h3>
-                        <p>Accessible writing on public finance topics.</p>
+                        <h3>Short-form writing</h3>
+                        <p>Commentary, notes, and quick takes.</p>
+                        <span class="arrow">→</span>
                     </a>
-                    <a href="resume.html" class="featured-item">
+                    <a href="resume.html" class="featured-item reveal">
                         <span class="tag">Resume</span>
                         <h3>Professional background</h3>
                         <p>Education, experience, and skills.</p>
+                        <span class="arrow">→</span>
                     </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-banner section">
+            <div class="container">
+                <div class="cta-card reveal">
+                    <h2>Have a project, story, or role in mind?</h2>
+                    <p>I'm open to research collaborations, writing opportunities, and full-time roles in finance.</p>
+                    <a href="contact.html" class="btn btn-primary">Get in touch</a>
                 </div>
             </div>
         </section>
@@ -95,5 +149,6 @@
             </ul>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>State Budget Tracker — Aman Chandaliya</title>
+    <title>Personal Finance Tracker — Aman Chandaliya</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="site-header">
         <div class="container nav-wrap">
             <a href="../index.html" class="brand">Aman Chandaliya</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
             <nav class="site-nav">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
@@ -30,22 +33,22 @@
     <main>
         <section class="paper">
             <div class="container narrow">
-                <article>
+                <article class="reveal">
                     <span class="tag">Project</span>
-                    <h1>State Budget Tracker</h1>
+                    <h1>Personal Finance Tracker</h1>
                     <p class="meta">By Aman Chandaliya · 2026</p>
 
                     <h2>Overview</h2>
-                    <p>The State Budget Tracker is a comparative dataset and visualization project covering Connecticut, Florida, and Wyoming. It pulls statutory budget reports and reformats them into a single, navigable schema.</p>
+                    <p>Built around the principle that most personal finance complexity is unnecessary. Tracks cash flow, savings rate, investment allocation, and net worth — automatically rolling forward each month.</p>
 
                     <h2>Stack & Sources</h2>
-                    <p>Python · Pandas · CSV · static HTML</p>
+                    <p>Excel / Google Sheets</p>
 
                     <h2>Status</h2>
-                    <p>In active development</p>
+                    <p>Live · template available</p>
 
                     <h2>Outcome</h2>
-                    <p>Reduces the time required to produce comparative state-budget research from days to hours.</p>
+                    <p>A working system I actually use, designed to be readable in under 30 seconds.</p>
 
                     <a href="../projects.html" class="back-link">← Back to Projects</a>
                 </article>
@@ -62,5 +65,6 @@
             </ul>
         </div>
     </footer>
+    <script src="../script.js"></script>
 </body>
 </html>

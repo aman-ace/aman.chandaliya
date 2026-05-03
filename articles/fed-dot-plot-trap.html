@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infrastructure Resilience Risk Map — Aman Chandaliya</title>
+    <title>The Dot Plot Trap — Aman Chandaliya</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="site-header">
         <div class="container nav-wrap">
             <a href="../index.html" class="brand">Aman Chandaliya</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
             <nav class="site-nav">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../about.html">About</a></li>
-                    <li><a href="../projects.html" class="active">Projects</a></li>
+                    <li><a href="../projects.html">Projects</a></li>
                     <li><a href="../research.html">Research</a></li>
-                    <li><a href="../articles.html">Articles</a></li>
+                    <li><a href="../articles.html" class="active">Articles</a></li>
                     <li><a href="../resume.html">Resume</a></li>
                     <li><a href="../contact.html">Contact</a></li>
                 </ul>
@@ -30,24 +33,14 @@
     <main>
         <section class="paper">
             <div class="container narrow">
-                <article>
-                    <span class="tag">Project</span>
-                    <h1>Infrastructure Resilience Risk Map</h1>
-                    <p class="meta">By Aman Chandaliya · 2026</p>
+                <article class="reveal">
+                    <span class="tag">Markets</span>
+                    <h1>The Dot Plot Trap</h1>
+                    <p class="meta">By Aman Chandaliya · March 2026</p>
 
-                    <h2>Overview</h2>
-                    <p>This project sketches a methodology for mapping statutory capital appropriations against third-party resilience-risk indicators, with the goal of identifying funding gaps.</p>
+                    <p>The Fed's Summary of Economic Projections is genuinely informative — about the committee. It tells you how policymakers see the world right now, given current data. It is not a forecast of where rates will go, and treating it as one has cost market participants billions over the past two decades. Read the dot plot to understand the Fed; read the data to understand the path.</p>
 
-                    <h2>Stack & Sources</h2>
-                    <p>QGIS · public infrastructure reports · statutory data</p>
-
-                    <h2>Status</h2>
-                    <p>Concept</p>
-
-                    <h2>Outcome</h2>
-                    <p>Provides a visual entry point for non-technical readers into resilience funding shortfalls.</p>
-
-                    <a href="../projects.html" class="back-link">← Back to Projects</a>
+                    <a href="../articles.html" class="back-link">← Back to Articles</a>
                 </article>
             </div>
         </section>
@@ -62,5 +55,6 @@
             </ul>
         </div>
     </footer>
+    <script src="../script.js"></script>
 </body>
 </html>
