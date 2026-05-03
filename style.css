@@ -122,8 +122,9 @@ a:hover { color: var(--color-primary-hover); }
 
 .site-nav ul {
     display: flex;
-    gap: 1.75rem;
+    gap: 1.4rem;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .site-nav a {
@@ -477,6 +478,43 @@ a:hover { color: var(--color-primary-hover); }
     display: inline-block;
     margin-top: 2rem;
     font-weight: 600;
+}
+
+/* Resume */
+.resume-item {
+    background: var(--color-surface);
+    padding: 1.5rem;
+    border-left: 3px solid var(--color-accent);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.resume-item h3 {
+    color: var(--color-primary);
+    margin-bottom: 0.25rem;
+}
+
+.resume-meta {
+    color: var(--color-muted);
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+.resume-note {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: var(--color-tag-bg);
+    border-radius: var(--radius);
+    color: var(--color-muted);
+    font-size: 0.9rem;
+}
+
+.resume-note code {
+    background: white;
+    padding: 0.1rem 0.35rem;
+    border-radius: 4px;
+    font-size: 0.85em;
 }
 
 /* Footer */
